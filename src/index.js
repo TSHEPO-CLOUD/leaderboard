@@ -38,3 +38,6 @@ const postScore = (e) => {
   e.preventDefault();
 };
 
+document.addEventListener('DOMContentLoaded', startGame);
+addForm.addEventListener('submit', postScore);
+refresh.addEventListener('click', getScores);
