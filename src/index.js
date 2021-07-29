@@ -25,3 +25,16 @@ const addToUI = (arr) => {
     `;
   });
 };
+
+const getScores = () => {
+  leaderboard.getScores(gameId).then((response) => addToUI(response.result));
+};
+
+const postScore = (e) => {
+  leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
+
+  nameInput.value = '';
+  scoreInput.value = '';
+  e.preventDefault();
+};
+
