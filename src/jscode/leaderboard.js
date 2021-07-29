@@ -4,7 +4,7 @@ class Leaderboard {
  }
 
  async startGame(gameName) {
-   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+  const responseStart = await fetch(this.url, {
      method: 'POST',
      body: JSON.stringify({
        name: gameName,
