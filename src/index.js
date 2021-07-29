@@ -17,3 +17,11 @@ const startGame = () => {
     });
 };
 
+const addToUI = (arr) => {
+  list.innerHTML = '';
+  arr.forEach((el) => {
+    list.innerHTML += `
+    <li class="item">${el.user} : ${el.score}</li>
+    `;
+  });
+};
