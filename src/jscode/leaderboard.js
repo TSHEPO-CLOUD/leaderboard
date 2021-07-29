@@ -5,13 +5,11 @@ class Leaderboard {
 
  async startGame(gameName) {
   const responseStart = await fetch(this.url, {
-     method: 'POST',
-     body: JSON.stringify({
-       name: gameName,
-     }),
-     headers: {
-       'Content-type': 'application/json; charset=UTF-8',
-     },
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(gameName),
    });
 
    const responseData = await responseStart.json();
