@@ -11,6 +11,7 @@
     "webhint": "hint .",
     "stylelint": "stylelint \"**/*.{css,scss}\"",
     "eslint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "lint": "npm run webhint && npm run stylelint && npm run eslint",
     "predeploy": "npm run build"
   },
