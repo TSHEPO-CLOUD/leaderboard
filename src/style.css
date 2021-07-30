@@ -1,3 +1,128 @@
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
-  background-color: aquamarine;
+  width: 60%;
+  height: 91vh;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(71, 71, 71);
+  background-color: turquoise;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+  background-size: 35%;
+}
+
+h1 {
+  padding: 0 1.5rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  width: 50%;
+  padding: 0 1.5rem;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  align-self: center;
+  background-color: rgb(71, 71, 71);
+  height: 2rem;
+  border: none;
+  color: white;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.score-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 2px solid #555;
+  border-radius: 5px;
+}
+
+.item {
+  height: 2rem;
+  padding: 0 1rem;
+  padding-top: 0.6rem;
+  font-weight: 500;
+}
+
+.item:nth-of-type(even) {
+  background: rgba(182, 182, 182, 0.603);
+}
+
+.right-section {
+  width: 50%;
+  padding: 0 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+}
+
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: rgb(71, 71, 71);
+  padding: 5px;
+}
+
+#submit-btn {
+  font-family: 'Roboto', sans-serif;
+  align-self: flex-end;
+  background-color: rgb(71, 71, 71);
+  height: 2rem;
+  border: none;
+  color: white;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fb;
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+  text-align: center;
 }
